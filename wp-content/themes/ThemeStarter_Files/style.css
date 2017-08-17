@@ -1,0 +1,290 @@
+/*
+Theme Name:Assignment 2: WordPress Basic Theme;
+Author:Sayaka Tamura
+Author URL: http://wpmmp.bmcc.cuny.edu/~stamura/portfolio
+Description: Theis is a theme created for MMP350
+Version: 1.0
+*/
+
+
+/* apply a border-box layout model to all elements
+	from http://paulirish.com/2012/box-sizing-border-box-ftw/*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*
+*  	=================================	*
+*   Clearfix  				*
+*  	=================================	*
+*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+*  	=================================	*
+*   Front Page Styling  				*
+*  	=================================	*
+*/
+
+.logo{
+	float:left;
+	margin-right: 1em;
+}
+
+.featured-posts{
+	width:80%;
+	margin: 2em auto;
+	overflow: hidden;
+}
+
+
+/*
+*  	=================================	*
+*   Major Content Styling  				*
+*  	=================================	*
+*/
+body{
+	font-size:100%;
+	line-height: 1.5;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+	margin-bottom: 1em;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: sans-serif;
+}
+
+a, a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+
+/* masthead*/
+
+.masthead h1{ /*Google Web Font Example*/
+	font-family: 'Neuton', serif;
+	font-size:2.5em;
+	font-weight:200;
+}
+
+.masthead h2{ /*Font Squirrel Downloaded Example*/
+	font-family: 'OstrichSansRoundedMedium', sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+	margin-bottom: 1em;
+	line-height: 1;
+}
+
+/*
+*  	=================================	*
+	Navigation
+*  	=================================	*
+*/
+#menu-main-menu{
+	float:left;
+}
+
+.menu-main-menu-container .menu
+{
+	width: 200px;
+}
+
+.menu-main-menu-container .menu li
+{
+	background-color: #bbb;
+	float: left;
+	margin: 0 30px 15px 15px;
+	text-align: center;
+	border-radius: 800px;
+	-moz-border-radius: 800px;
+	-webkit-border-radius: 800px;
+}
+
+.menu-main-menu-container .menu a {
+	width: 100px;
+	color: #fff;
+	height: 100px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;22
+	font-weight: bold;
+}
+
+.menu-main-menu-container .menu a:link, .menu a:visited
+{
+	color:#FFF;
+	text-decoration: none;
+}
+.menu-main-menu-container .menu li:hover
+{
+	-webkit-transform: scale( 1.15 );
+	-moz-transform: scale( 1.15 );
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+
+}
+.menu-main-menu-container .current-menu-item a:link,.menu-main-menu-container .current-menu-item a:visited
+{
+	color: #fff;
+	background-color: #222;
+	border-radius: 800px;
+	-moz-border-radius: 800px;
+	-webkit-border-radius: 800px;
+}
+
+
+/*
+*  	=================================	*
+*   Major Layout Styling					*
+*  	=================================	*
+*/
+.wrapper{
+	width: 95%;
+	margin: 0 auto;
+}
+
+header{
+
+}
+
+.post{
+	margin-bottom: 2.5em;
+}
+
+/*===== Footer ======*/
+footer{
+	font-family: 'Neuton', serif;
+	font-weight: 200;
+	clear: both;
+	border-top: 3px solid #000;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.menu-footer-menu-container li{
+	float:left;
+	padding-right:1em;
+}
+
+.menu-footer-menu-container.current-menu-item a:link, .menu-footer-menu-container .current-menu-item a:visited
+{
+/*	color: #000;
+	background-color: #222;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;*/
+}
+
+.copyright{
+	width: 30%;
+	float: left;
+}
+
+.designedby{
+	width: 25%;
+	float: right;
+	text-align: right;
+}
+
+.post-thumb{
+width: 25%;
+float: left;
+padding: 0 1%;
+}
+
+
+/* ==============================
+Front Page Item Animations
+modified from Jenn Lukas
+http://codepen.io/Jenn/pen/zvkLy
+============================= */
+
+
+.work-thumb {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    overflow: hidden;
+    float:left;
+}
+
+.work-thumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.work-thumb a img{
+vertical-align: middle;
+border: none;
+}
+
+.work-info {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
+
+.work-info h2 {
+font-size:1em;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 0; /*reset foundation styling */
+}
+
+.info-reveal {
+    overflow: hidden;
+    max-height: 0;
+    background: rgba(183, 191, 185, 0.95);
+    transition: all 0.7s linear;
+}
+
+.info-reveal p {
+font-size:.9em;
+    color: #333;
+    padding: 8px;
+}
+
+a:hover .info-reveal, a:focus .info-reveal {
+    max-height: 240px;
+}
+
+/* ========================================
+    Archive
+======================================== */
+.archive-item{
+	border-bottom: 1px solid black;
+	margin-bottom: 1.5em;
+}
+
+/* ========================================
+    Archive
+======================================== */
+
+.page-content{
+	width: 80%;
+	float: right;
+	margin-bottom: 2em;
+}
+
+.page-content h1,h2,h3,h4,h5,h6{
+	font-family: 'Neuton', serif;
+	font-weight:200;
+}
+
+.page-content h2{
+	font-size: 2em;
+	top: -0.5em;
+	position: relative;
+}
