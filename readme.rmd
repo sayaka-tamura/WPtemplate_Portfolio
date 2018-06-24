@@ -1,3 +1,15 @@
-WordPress template for making portfolio site
+## Portfolio site's template
 
-http://wpmmp.bmcc.cuny.edu/~stamura/portfolio/
+[(Link) Portfolio site's template](http://wpmmp.bmcc.cuny.edu/~stamura/portfolio/)
+
+### Summery:  
+WordPress Theme for portfolio
+
+### Year:  
+2016  
+
+### SERVICES:  
+Web design, Front-end, Back-end  
+
+### Tag:  
+HTML5, CSS, PHP, WordPress, Responsive-Design, Design
